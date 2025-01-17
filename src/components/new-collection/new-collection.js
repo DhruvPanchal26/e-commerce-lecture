@@ -9,6 +9,7 @@ const NewCollection = () => {
       title: "title 1",
       subTitle: "sub_title",
       price: 1,
+      "id": "czt task"
     },
     {
       image:
@@ -46,6 +47,7 @@ const NewCollection = () => {
         {cards_info.map((item, index) => {
           return (
             <Cards
+              id={item.id}
               key={index}
               image={item.image}
               title={item.title}
