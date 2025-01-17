@@ -2,7 +2,8 @@ import "./collection-cards.css";
 
 const Cards = ({ image, title, sub_title, price }) => {
   return (
-    <div className="card">
+    <NavLink to="/category/:id">
+      <div className="card">
       <div
         className="card-image"
         style={{
@@ -16,6 +17,7 @@ const Cards = ({ image, title, sub_title, price }) => {
       <div className="card-sub">{sub_title}</div>
       <div className="card-price">${price}</div>
     </div>
+  </NavLink>
   );
 };
 
