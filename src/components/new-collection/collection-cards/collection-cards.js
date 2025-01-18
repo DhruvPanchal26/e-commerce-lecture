@@ -20,6 +20,7 @@ const Cards = ({ image, title, sub_title, price, id }) => {
       <div className="card-title">{title}</div>
       <div className="card-sub">{sub_title}</div>
       <div className="card-price">${price}</div>
+      <div className="card-id">{id}</div>
     </div>
   </NavLink>
   );
